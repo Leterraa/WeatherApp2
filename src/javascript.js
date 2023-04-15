@@ -29,10 +29,10 @@ let tempUnit = "C";
 temp.addEventListener("click", () => {
   if (tempUnit === "C") {
     let tempF = Math.round((tempValueCelsius * 9) / 5 + 32);
-    temp.innerHTML = `<strong>${tempF}&deg;F</strong>`;
+    temp.innerHTML = `<strong>${Math.round(tempF)}&deg;F</strong>`;
     tempUnit = "F";
   } else {
-    temp.innerHTML = `<strong>${tempValueCelsius}&deg;C</strong>`;
+    temp.innerHTML = `<strong>${Math.round(tempValueCelsius)}&deg;C</strong>`;
     tempUnit = "C";
   }
 });
