@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="searching">
+          <form id="search-form" class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="city-input"
+            />
+            <button class="btn btn-outline-success" type="submit" id="search-button">
+              Search
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" type="button" id="currentLocationButton">
+              Current
+            </button>
+          </form>
+        </div>
+        <div class="cards">
+          <div class="today-card">
+            <h2 id="city"></h2>
+            <div id="current-time"></div>
+            <div class="weather-info">
+              <div class="temp-icon-humidity">
+                <span class="humidity-icon"><img src="images/icons8-wet-30.png" alt=""></span>
+                <div class="humidity">%</div>
+                <div class="temp"><strong>°C</strong></div>
+                <div class="icon"><img src="images/icons8-rain-64.png" alt="weather rainy icon"/></div>
+              </div>
+              <div class="rainy">It's rainy today!</div>
+              <div class="wind-speed">Wind Speed:  km/h</div>
+            </div>
+        </div>
+        <div class="sidebar">
+          <ul>
+            <li>Berlin</li>
+            <li>Kyiv</li>
+            <li>London</li>
+            <li>Paris</li>
+            <li>Toronto</li>
+            <li>Cape Town</li>
+          </ul>
+        </div>
+      </div>
+      <div class="week-container" id="week-group">
+    <div class="card-group">
+      <section class="mx-auto my-5" style="max-width: 23rem"></section>
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title">10.03</h5>
+          <img src="images/icons8-cloud-64.png" class="card-img-top" alt="..." />
+          <p class="card-text">Cloudy</p>
+          <p class="card-text">6°</p>
+        </div>
+      </div>
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title">11.03</h5>
+          <img src="images/icons8-cloud-64.png" class="card-img-top" alt="..." />
+          <p class="card-text">Cloudy</p>
+          <p class="card-text">3°</p>
+        </div>
+      </div>
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title">12.03</h5>
+          <img src="images/icons8-rain-64.png" class="card-img-top" alt="..." />
+          <p class="card-text">Riany</p>
+          <p class="card-text">5°</p>
+        </div>
+      </div>
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title">13.03</h5>
+          <img src="images/icons8-cloud-64.png" class="card-img-top" alt="..." />
+          <p class="card-text">Cloudy</p>
+          <p class="card-text">3°</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">14.03</h5>
+          <img
+          src="images/icons8-sunny-64 (1).png"
+          class="card-img-top"
+          alt="..."
+        />
+        <p class="card-text">Sunny</p>
+          <p class="card-text">7º</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p><a href="https://github.com/Leterraa/Weather-app" class="open-source-link">Open-source code</a> by Valeriia Teplynska</p>
+  </footer>
+    </div>
+    <script src="src/javascript.js"></script>
+  </body>
+</html>

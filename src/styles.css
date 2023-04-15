@@ -1,0 +1,143 @@
+body {
+  background: whitesmoke;
+  color: rgba(137, 122, 230, 0.824);
+  margin: 0;
+  padding: 15px 15px 0 15px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: left;
+  margin-bottom: 20px;
+}
+.form-control {
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  border-color: rgba(173, 161, 255, 0.463);
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+}
+.btn {
+  padding: 5px 15px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  color: rgba(137, 122, 230, 0.824);
+  background-color: rgb(210, 221, 246);
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: cursive;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.today-card {
+  background-color: rgba(212, 231, 228, 0.824);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 31%;
+  margin-right: 69px;
+  margin-top: 14px;
+}
+
+.card-title {
+  margin-bottom: 20px;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp-icon-humidity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+.humidity {
+  font-size: 13px;
+  margin-right: 10px;
+  font-family: cursive;
+}
+
+.humidity-icon {
+  margin-right: 1px;
+}
+.temp {
+  margin-right: 10px;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+.rainy {
+  margin: 1px;
+  font-size: 18px;
+  font-family: cursive;
+}
+.wind-speed {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+}
+h2 {
+  margin-bottom: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: pre-line;
+  margin-right: 47%;
+}
+
+ul {
+  list-style-type: circle;
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.week-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.card-group {
+  display: flex;
+  flex-direction: row;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 40px;
+}
+.open-source-link {
+  color: rgb(124, 113, 192);
+  text-decoration: underline;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
